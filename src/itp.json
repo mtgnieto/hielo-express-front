@@ -1,0 +1,1154 @@
+[
+    {
+        "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+        "dato": "",
+        "color": "#CEE3F6",
+        "index": 1,
+        "contenido": [],
+        "agrupacion": 1,
+        "tipo_campo": "varchar",
+        "obligatorio": "true",
+        "nombre_cabecera": "Nº DE MEZCLA",
+        "nombre_agrupacion": "PINTURA Y MEZCLA",
+        "tipo_campo_detalle": "{SERIABLE}"
+    },
+    {
+        "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+        "dato": "",
+        "color": "#CEE3F6",
+        "index": 2,
+        "contenido": [
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#CEE3F6",
+                "index": 3,
+                "contenido": [],
+                "agrupacion": 1,
+                "tipo_campo": "combobox",
+                "obligatorio": "true",
+                "nombre_cabecera": "ESTADO PREPARACION (OK/NOK/NA) ",
+                "nombre_agrupacion": "PINTURA Y MEZCLA",
+                "tipo_campo_detalle": [
+                    "OK",
+                    "KO",
+                    "NA"
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#CEE3F6",
+                "index": 4,
+                "contenido": [],
+                "agrupacion": 1,
+                "tipo_campo": "date",
+                "obligatorio": "true",
+                "nombre_cabecera": "FECHA PREPARACION",
+                "nombre_agrupacion": "PINTURA Y MEZCLA",
+                "tipo_campo_detalle": [
+                    "INPUT"
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#CEE3F6",
+                "index": 5,
+                "contenido": [],
+                "agrupacion": 1,
+                "tipo_campo": "hour",
+                "obligatorio": "true",
+                "nombre_cabecera": "HORA FIN PREPARACION",
+                "nombre_agrupacion": "PINTURA Y MEZCLA",
+                "tipo_campo_detalle": [
+                    "INPUT"
+                ]
+            }
+        ],
+        "agrupacion": 1,
+        "obligatorio": "true",
+        "nombre_cabecera": "PREPARACION SUPERFICIAL",
+        "nombre_agrupacion": "PINTURA Y MEZCLA",
+        "tipo_campo_detalle": []
+    },
+    {
+        "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+        "dato": "",
+        "color": "#CEE3F6",
+        "index": 6,
+        "contenido": [
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#CEE3F6",
+                "index": 7,
+                "contenido": [],
+                "agrupacion": 1,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "ESTADO (OK/NOK/NA) ",
+                "nombre_agrupacion": "PINTURA Y MEZCLA",
+                "tipo_campo_detalle": [
+                    {
+                        "texto": "N/A"
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#CEE3F6",
+                "index": 8,
+                "contenido": [],
+                "agrupacion": 1,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "FECHA CONTINUIDAD",
+                "nombre_agrupacion": "PINTURA Y MEZCLA",
+                "tipo_campo_detalle": [
+                    {
+                        "texto": "N/A"
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#CEE3F6",
+                "index": 9,
+                "contenido": [],
+                "agrupacion": 1,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "HORA CONTINUIDAD",
+                "nombre_agrupacion": "PINTURA Y MEZCLA",
+                "tipo_campo_detalle": [
+                    {
+                        "texto": "N/A"
+                    }
+                ]
+            }
+        ],
+        "agrupacion": 1,
+        "obligatorio": "true",
+        "nombre_cabecera": "ENSAYO CONTINUIDAD PELICULA DE AGUA S/ IE7519",
+        "nombre_agrupacion": "PINTURA Y MEZCLA",
+        "tipo_campo_detalle": []
+    },
+    {
+        "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+        "dato": "",
+        "color": "#CEE3F6",
+        "index": 10,
+        "contenido": [
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#CEE3F6",
+                "index": 11,
+                "contenido": [],
+                "agrupacion": 1,
+                "tipo_campo": "api",
+                "obligatorio": "true",
+                "nombre_cabecera": "T. SALA MEZCLAS ( 18 A 25ºC)",
+                "nombre_agrupacion": "PINTURA Y MEZCLA",
+                "tipo_campo_detalle": [
+                    {
+                        "api": "http://scorpio.sev.alestis:8069/v1/fr20_api_temp_hum/MEZCLA_PINTURA_SPB/",
+                        "campos": [
+                            {
+                                "name": "Temperatura",
+                                "name_api": "temperature"
+                            }
+                        ],
+                        "cuadro_dialogo": true
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#CEE3F6",
+                "index": 12,
+                "contenido": [],
+                "agrupacion": 1,
+                "tipo_campo": "api",
+                "obligatorio": "true",
+                "nombre_cabecera": "HUMEDAD RELATIVA MEZCLA RECOMENDABLE (40-60 % HR)",
+                "nombre_agrupacion": "PINTURA Y MEZCLA",
+                "tipo_campo_detalle": [
+                    {
+                        "api": "http://scorpio.sev.alestis:8800/api_temp_humedad/temperatura_humedad_area/MEZCLA_PINTURA_SPB",
+                        "campos": [
+                            {
+                                "name": "Humedad Relativa(%)",
+                                "name_api": "relative_humidity"
+                            },
+                            {
+                                "name": "Fecha_hora",
+                                "name_api": "fecha_hora"
+                            }
+                        ],
+                        "cuadro_dialogo": false
+                    }
+                ]
+            }
+        ],
+        "agrupacion": 1,
+        "obligatorio": "true",
+        "nombre_cabecera": "COND. SALA MEZCLAS",
+        "nombre_agrupacion": "PINTURA Y MEZCLA",
+        "tipo_campo_detalle": []
+    },
+    {
+        "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+        "dato": "",
+        "color": "#CEE3F6",
+        "index": 13,
+        "contenido": [
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#CEE3F6",
+                "index": 14,
+                "contenido": [],
+                "agrupacion": 1,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "COMPONENTES ",
+                "nombre_agrupacion": "PINTURA Y MEZCLA",
+                "tipo_campo_detalle": [
+                    {
+                        "texto": "Base: 37045 Catalizador: S66/22R Diluyente: C25/90S (Z12129)"
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#CEE3F6",
+                "index": 15,
+                "contenido": [],
+                "agrupacion": 1,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "PROPORCION PARTES EN VOLUMEN",
+                "nombre_agrupacion": "PINTURA Y MEZCLA",
+                "tipo_campo_detalle": [
+                    {
+                        "texto": "Base: 100 Catalizador: 50 Diluyente: 100-125"
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#CEE3F6",
+                "index": 16,
+                "contenido": [],
+                "agrupacion": 1,
+                "tipo_campo": "api",
+                "obligatorio": "true",
+                "nombre_cabecera": "FECHA DE CADUCIDAD ( PARTIDA)",
+                "nombre_agrupacion": "PINTURA Y MEZCLA",
+                "tipo_campo_detalle": [
+                    {
+                        "api": "http://scorpio.sev.alestis:8800/api_quimicos/v1/extrae_elementos_albaran/",
+                        "campos": [
+                            {
+                                "name": "F. Caducidad",
+                                "name_api": "expiration"
+                            }
+                        ],
+                        "cuadro_dialogo": true
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#CEE3F6",
+                "index": 17,
+                "contenido": [],
+                "agrupacion": 1,
+                "tipo_campo": "api",
+                "obligatorio": "true",
+                "nombre_cabecera": "Nº LOTE RECIPIENTE (PARTIDA)",
+                "nombre_agrupacion": "PINTURA Y MEZCLA",
+                "tipo_campo_detalle": [
+                    {
+                        "api": "http://scorpio.sev.alestis:8800/api_quimicos/v1/extrae_elementos_albaran/",
+                        "campos": [
+                            {
+                                "name": "LOTE",
+                                "name_api": "batchserial"
+                            },
+                            {
+                                "name": "PAUTA",
+                                "name_api": "comanufacturer"
+                            }
+                        ],
+                        "cuadro_dialogo": true
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#CEE3F6",
+                "index": 18,
+                "contenido": [],
+                "agrupacion": 1,
+                "tipo_campo": "date",
+                "obligatorio": "true",
+                "nombre_cabecera": "FECHA MEZCLA",
+                "nombre_agrupacion": "PINTURA Y MEZCLA",
+                "tipo_campo_detalle": [
+                    "INPUT"
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#CEE3F6",
+                "index": 19,
+                "contenido": [],
+                "agrupacion": 1,
+                "tipo_campo": "hour",
+                "obligatorio": "true",
+                "nombre_cabecera": "HORA INICIO MEZC.(APER. LATA)",
+                "nombre_agrupacion": "PINTURA Y MEZCLA",
+                "tipo_campo_detalle": [
+                    "INPUT"
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#CEE3F6",
+                "index": 20,
+                "contenido": [],
+                "agrupacion": 1,
+                "tipo_campo": "hour",
+                "obligatorio": "true",
+                "nombre_cabecera": "HORA FINALIZACION MEZCLA",
+                "nombre_agrupacion": "PINTURA Y MEZCLA",
+                "tipo_campo_detalle": [
+                    {
+                        "dependencia": [
+                            {
+                                "id": 19,
+                                "unidad": "m",
+                                "calculo": "suma",
+                                "cantidad": 3
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "agrupacion": 1,
+        "obligatorio": "true",
+        "nombre_cabecera": "DATOS MEZCLA",
+        "nombre_agrupacion": "PINTURA Y MEZCLA",
+        "tipo_campo_detalle": []
+    },
+    {
+        "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+        "dato": "",
+        "color": "#CEE3F6",
+        "index": 21,
+        "contenido": [
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#CEE3F6",
+                "index": 22,
+                "contenido": [],
+                "agrupacion": 1,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "EN COPA TRAS TIEMPO DE POLIMERIZACION: ",
+                "nombre_agrupacion": "PINTURA Y MEZCLA",
+                "tipo_campo_detalle": [
+                    {
+                        "texto": "ISO Nº3 Tiempo segun ITP: 33 a 43 segundos"
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#CEE3F6",
+                "index": 23,
+                "contenido": [],
+                "agrupacion": 1,
+                "tipo_campo": "integer",
+                "obligatorio": "true",
+                "nombre_cabecera": "PRIMERA MEDIDA",
+                "nombre_agrupacion": "PINTURA Y MEZCLA",
+                "tipo_campo_detalle": [
+                    "INPUT"
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#CEE3F6",
+                "index": 24,
+                "contenido": [],
+                "agrupacion": 1,
+                "tipo_campo": "integer",
+                "obligatorio": "true",
+                "nombre_cabecera": "SEGUNDA MEDIDA",
+                "nombre_agrupacion": "PINTURA Y MEZCLA",
+                "tipo_campo_detalle": [
+                    "INPUT"
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#CEE3F6",
+                "index": 25,
+                "contenido": [],
+                "agrupacion": 1,
+                "tipo_campo": "integer",
+                "obligatorio": "true",
+                "nombre_cabecera": "MEDIA",
+                "nombre_agrupacion": "PINTURA Y MEZCLA",
+                "tipo_campo_detalle": [
+                    "INPUT"
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#CEE3F6",
+                "index": 26,
+                "contenido": [],
+                "agrupacion": 1,
+                "tipo_campo": "api",
+                "obligatorio": "true",
+                "nombre_cabecera": "Tª(VISC.)",
+                "nombre_agrupacion": "PINTURA Y MEZCLA",
+                "tipo_campo_detalle": [
+                    {
+                        "api": "http://scorpio.sev.alestis:8800/api_temp_humedad/temperatura_humedad_area/MEZCLA_PINTURA_SPB",
+                        "campos": [
+                            {
+                                "name": "Temperatura(ºC)",
+                                "name_api": "temperature"
+                            },
+                            {
+                                "name": "Fecha_hora",
+                                "name_api": "fecha_hora"
+                            }
+                        ],
+                        "cuadro_dialogo": false
+                    }
+                ]
+            }
+        ],
+        "agrupacion": 1,
+        "obligatorio": "true",
+        "nombre_cabecera": "VISCOSIDAD MEZCLA S/IE7520 (La diferencia entre las med. 1 y 2 no podrá +/- 5%)",
+        "nombre_agrupacion": "PINTURA Y MEZCLA",
+        "tipo_campo_detalle": []
+    },
+    {
+        "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+        "dato": "",
+        "color": "#CEE3F6",
+        "index": 27,
+        "contenido": [],
+        "agrupacion": 1,
+        "tipo_campo": "hour",
+        "obligatorio": "true",
+        "nombre_cabecera": "CADUCIDAD DE LA MEZCLA (8 H a 23 ± 2 ºC)",
+        "nombre_agrupacion": "PINTURA Y MEZCLA",
+        "tipo_campo_detalle": [
+            {
+                "dependencia": [
+                    {
+                        "id": 19,
+                        "unidad": "h",
+                        "calculo": "suma",
+                        "cantidad": 8
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+        "dato": "",
+        "color": "#CEE3F6",
+        "index": 28,
+        "contenido": [],
+        "agrupacion": 1,
+        "tipo_campo": "integer",
+        "obligatorio": "true",
+        "nombre_cabecera": "SELLO MEZCLA",
+        "nombre_agrupacion": "PINTURA Y MEZCLA",
+        "tipo_campo_detalle": [
+            "INPUT"
+        ]
+    },
+    {
+        "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+        "dato": "",
+        "color": "#FBFF70",
+        "index": 29,
+        "contenido": [
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#FBFF70",
+                "index": 30,
+                "contenido": [],
+                "agrupacion": 2,
+                "tipo_campo": "api",
+                "obligatorio": "true",
+                "nombre_cabecera": "TEMP CABINA PINTURA 15 a 35ºC",
+                "nombre_agrupacion": "APLICACION",
+                "tipo_campo_detalle": [
+                    {
+                        "api": "http://scorpio.sev.alestis:8800/api_temp_humedad/temperatura_humedad_area/PINTURA_SPB_CABINA",
+                        "campos": [
+                            {
+                                "name": "Temperatura(ºC)",
+                                "name_api": "temperature"
+                            },
+                            {
+                                "name": "Fecha_hora",
+                                "name_api": "fecha_hora"
+                            }
+                        ],
+                        "cuadro_dialogo": false
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#FBFF70",
+                "index": 31,
+                "contenido": [],
+                "agrupacion": 2,
+                "tipo_campo": "api",
+                "obligatorio": "true",
+                "nombre_cabecera": "Hr CABINA PINTURA 35 a 75%",
+                "nombre_agrupacion": "APLICACION",
+                "tipo_campo_detalle": [
+                    {
+                        "api": "http://scorpio.sev.alestis:8800/api_temp_humedad/temperatura_humedad_area/PINTURA_SPB_CABINA",
+                        "campos": [
+                            {
+                                "name": "Humedad Relativa(%)",
+                                "name_api": "relative_humidity"
+                            },
+                            {
+                                "name": "Fecha_hora",
+                                "name_api": "fecha_hora"
+                            }
+                        ],
+                        "cuadro_dialogo": false
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#FBFF70",
+                "index": 32,
+                "contenido": [],
+                "agrupacion": 2,
+                "tipo_campo": "hour",
+                "obligatorio": "true",
+                "nombre_cabecera": "HORA INICIO APLICACION",
+                "nombre_agrupacion": "APLICACION",
+                "tipo_campo_detalle": [
+                    "INPUT"
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#FBFF70",
+                "index": 33,
+                "contenido": [],
+                "agrupacion": 2,
+                "tipo_campo": "hour",
+                "obligatorio": "true",
+                "nombre_cabecera": "HORA FINALIZACION APLICACION",
+                "nombre_agrupacion": "APLICACION",
+                "tipo_campo_detalle": [
+                    "INPUT"
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#FBFF70",
+                "index": 34,
+                "contenido": [],
+                "agrupacion": 2,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "LOTE DE PROBETA",
+                "nombre_agrupacion": "APLICACION",
+                "tipo_campo_detalle": [
+                    "INPUT"
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#FBFF70",
+                "index": 35,
+                "contenido": [],
+                "agrupacion": 2,
+                "tipo_campo": "integer",
+                "obligatorio": "true",
+                "nombre_cabecera": "SELLO OPERARIO",
+                "nombre_agrupacion": "APLICACION",
+                "tipo_campo_detalle": [
+                    "INPUT"
+                ]
+            }
+        ],
+        "agrupacion": 2,
+        "obligatorio": "true",
+        "nombre_cabecera": "APLICACIÓN",
+        "nombre_agrupacion": "APLICACION",
+        "tipo_campo_detalle": []
+    },
+    {
+        "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+        "dato": "",
+        "color": "#FBFF70",
+        "index": 36,
+        "contenido": [
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#FBFF70",
+                "index": 37,
+                "contenido": [],
+                "agrupacion": 3,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "HORNO",
+                "nombre_agrupacion": "SECADO",
+                "tipo_campo_detalle": [
+                    "INPUT"
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#FBFF70",
+                "index": 38,
+                "contenido": [],
+                "agrupacion": 3,
+                "tipo_campo": "hour",
+                "obligatorio": "true",
+                "nombre_cabecera": "HORA INICIO SECADO TEMP. AMB. (30 MIN)",
+                "nombre_agrupacion": "SECADO",
+                "tipo_campo_detalle": [
+                    {
+                        "dependencia": [
+                            {
+                                "id": 33,
+                                "unidad": "m",
+                                "calculo": "suma",
+                                "cantidad": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#FBFF70",
+                "index": 39,
+                "contenido": [],
+                "agrupacion": 3,
+                "tipo_campo": "hour",
+                "obligatorio": "true",
+                "nombre_cabecera": "HORA FIN SECADO TEMP. AMBIENTE",
+                "nombre_agrupacion": "SECADO",
+                "tipo_campo_detalle": [
+                    {
+                        "dependencia": [
+                            {
+                                "id": 33,
+                                "unidad": "m",
+                                "calculo": "suma",
+                                "cantidad": 30
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#FBFF70",
+                "index": 40,
+                "contenido": [],
+                "agrupacion": 3,
+                "tipo_campo": "hour",
+                "obligatorio": "false",
+                "nombre_cabecera": "HORA INICIO SECADO HORNO ",
+                "nombre_agrupacion": "SECADO",
+                "tipo_campo_detalle": [
+                    "INPUT"
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#FBFF70",
+                "index": 41,
+                "contenido": [],
+                "agrupacion": 3,
+                "tipo_campo": "hour",
+                "obligatorio": "false",
+                "nombre_cabecera": "HORA FIN SECADO HORNO",
+                "nombre_agrupacion": "SECADO",
+                "tipo_campo_detalle": [
+                    "INPUT"
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#FBFF70",
+                "index": 42,
+                "contenido": [],
+                "agrupacion": 3,
+                "tipo_campo": "integer",
+                "obligatorio": "true",
+                "nombre_cabecera": "SELLO OPERARIO",
+                "nombre_agrupacion": "SECADO",
+                "tipo_campo_detalle": [
+                    "INPUT"
+                ]
+            }
+        ],
+        "agrupacion": 2,
+        "obligatorio": "true",
+        "nombre_cabecera": "SECADO",
+        "nombre_agrupacion": "APLICACION",
+        "tipo_campo_detalle": []
+    },
+    {
+        "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+        "dato": "",
+        "color": "#91F9B2",
+        "index": 43,
+        "contenido": [],
+        "agrupacion": 4,
+        "tipo_campo": "combobox",
+        "obligatorio": "true",
+        "nombre_cabecera": "ASPECTO OK/KO/NA  S/IE7530",
+        "nombre_agrupacion": "CONTROL DEL PROCESO",
+        "tipo_campo_detalle": [
+            "OK",
+            "KO",
+            "NA"
+        ]
+    },
+    {
+        "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+        "dato": "",
+        "color": "#91F9B2",
+        "index": 44,
+        "contenido": [
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#91F9B2",
+                "index": 45,
+                "contenido": [],
+                "agrupacion": 4,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "IDENTIFICACION  Y FECHA DE CALIBRACION",
+                "nombre_agrupacion": "CONTROL DEL PROCESO",
+                "tipo_campo_detalle": [
+                    {
+                        "texto": "NA"
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#91F9B2",
+                "index": 46,
+                "contenido": [],
+                "agrupacion": 4,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "PATRON DE GALGA 1",
+                "nombre_agrupacion": "CONTROL DEL PROCESO",
+                "tipo_campo_detalle": [
+                    {
+                        "texto": "NA"
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#91F9B2",
+                "index": 47,
+                "contenido": [],
+                "agrupacion": 4,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "PATRON DE GALGA 2",
+                "nombre_agrupacion": "CONTROL DEL PROCESO",
+                "tipo_campo_detalle": [
+                    {
+                        "texto": "NA"
+                    }
+                ]
+            }
+        ],
+        "agrupacion": 4,
+        "obligatorio": "true",
+        "nombre_cabecera": "DATOS MEDIDOR",
+        "nombre_agrupacion": "CONTROL DEL PROCESO",
+        "tipo_campo_detalle": []
+    },
+    {
+        "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+        "dato": "",
+        "color": "#91F9B2",
+        "index": 48,
+        "contenido": [
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#91F9B2",
+                "index": 49,
+                "contenido": [],
+                "agrupacion": 4,
+                "tipo_campo": "combobox",
+                "obligatorio": "true",
+                "nombre_cabecera": "PUESTA A PUNTO  CERO: OK/KO",
+                "nombre_agrupacion": "CONTROL DEL PROCESO",
+                "tipo_campo_detalle": [
+                    "OK",
+                    "KO",
+                    "NA"
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#91F9B2",
+                "index": 50,
+                "contenido": [],
+                "agrupacion": 4,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "MEDIDA 1.-",
+                "nombre_agrupacion": "CONTROL DEL PROCESO",
+                "tipo_campo_detalle": [
+                    {
+                        "texto": "NA"
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#91F9B2",
+                "index": 51,
+                "contenido": [],
+                "agrupacion": 4,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "MEDIDA 2.-",
+                "nombre_agrupacion": "CONTROL DEL PROCESO",
+                "tipo_campo_detalle": [
+                    {
+                        "texto": "NA"
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#91F9B2",
+                "index": 52,
+                "contenido": [],
+                "agrupacion": 4,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "MEDIDA 3.-",
+                "nombre_agrupacion": "CONTROL DEL PROCESO",
+                "tipo_campo_detalle": [
+                    {
+                        "texto": "NA"
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#91F9B2",
+                "index": 53,
+                "contenido": [],
+                "agrupacion": 4,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "MEDIA",
+                "nombre_agrupacion": "CONTROL DEL PROCESO",
+                "tipo_campo_detalle": [
+                    {
+                        "texto": "NA"
+                    }
+                ]
+            }
+        ],
+        "agrupacion": 4,
+        "obligatorio": "true",
+        "nombre_cabecera": "ESPESOR (µm) - de 4 a 6 µm s/ IE7513",
+        "nombre_agrupacion": "CONTROL DEL PROCESO",
+        "tipo_campo_detalle": []
+    },
+    {
+        "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+        "dato": "",
+        "color": "#91F9B2",
+        "index": 54,
+        "contenido": [
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#91F9B2",
+                "index": 55,
+                "contenido": [],
+                "agrupacion": 4,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "LOTE CINTA",
+                "nombre_agrupacion": "CONTROL DEL PROCESO",
+                "tipo_campo_detalle": [
+                    {
+                        "texto": "NA"
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#91F9B2",
+                "index": 56,
+                "contenido": [],
+                "agrupacion": 4,
+                "tipo_campo": "combobox",
+                "obligatorio": "true",
+                "nombre_cabecera": "EN SECO (OK/KO/NA)",
+                "nombre_agrupacion": "CONTROL DEL PROCESO",
+                "tipo_campo_detalle": [
+                    "OK",
+                    "KO",
+                    "NA"
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#91F9B2",
+                "index": 57,
+                "contenido": [],
+                "agrupacion": 4,
+                "tipo_campo": "date",
+                "obligatorio": "true",
+                "nombre_cabecera": "FECHA EN SECO",
+                "nombre_agrupacion": "CONTROL DEL PROCESO",
+                "tipo_campo_detalle": [
+                    "INPUT"
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#91F9B2",
+                "index": 58,
+                "contenido": [],
+                "agrupacion": 4,
+                "tipo_campo": "combobox",
+                "obligatorio": "true",
+                "nombre_cabecera": "EN HUMEDO (OK/KO/NA)",
+                "nombre_agrupacion": "CONTROL DEL PROCESO",
+                "tipo_campo_detalle": [
+                    "OK",
+                    "KO",
+                    "NA"
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#91F9B2",
+                "index": 59,
+                "contenido": [],
+                "agrupacion": 4,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "LOTE AGUA DESTILADA",
+                "nombre_agrupacion": "CONTROL DEL PROCESO",
+                "tipo_campo_detalle": [
+                    {
+                        "texto": "NA"
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#91F9B2",
+                "index": 60,
+                "contenido": [],
+                "agrupacion": 4,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "FECHA INICIO ENSAYO",
+                "nombre_agrupacion": "CONTROL DEL PROCESO",
+                "tipo_campo_detalle": [
+                    {
+                        "texto": "NA"
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#91F9B2",
+                "index": 61,
+                "contenido": [],
+                "agrupacion": 4,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "HORA INICIO ENSAYO",
+                "nombre_agrupacion": "CONTROL DEL PROCESO",
+                "tipo_campo_detalle": [
+                    {
+                        "texto": "NA"
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#91F9B2",
+                "index": 62,
+                "contenido": [],
+                "agrupacion": 4,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "FECHA FIN ENSAYO",
+                "nombre_agrupacion": "CONTROL DEL PROCESO",
+                "tipo_campo_detalle": [
+                    {
+                        "texto": "NA"
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#91F9B2",
+                "index": 63,
+                "contenido": [],
+                "agrupacion": 4,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "HORA FIN ENSAYO",
+                "nombre_agrupacion": "CONTROL DEL PROCESO",
+                "tipo_campo_detalle": [
+                    {
+                        "texto": "NA"
+                    }
+                ]
+            }
+        ],
+        "agrupacion": 4,
+        "obligatorio": "true",
+        "nombre_cabecera": "ADHERENCIA s/ IE7536",
+        "nombre_agrupacion": "CONTROL DEL PROCESO",
+        "tipo_campo_detalle": []
+    },
+    {
+        "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+        "dato": "",
+        "color": "#91F9B2",
+        "index": 64,
+        "contenido": [
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#91F9B2",
+                "index": 65,
+                "contenido": [],
+                "agrupacion": 4,
+                "tipo_campo": "combobox",
+                "obligatorio": "true",
+                "nombre_cabecera": "RETICULACION  CONFORMIDAD (OK/KO/NA)",
+                "nombre_agrupacion": "CONTROL DEL PROCESO",
+                "tipo_campo_detalle": [
+                    "OK",
+                    "KO",
+                    "NA"
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#91F9B2",
+                "index": 66,
+                "contenido": [],
+                "agrupacion": 4,
+                "tipo_campo": "varchar",
+                "obligatorio": "true",
+                "nombre_cabecera": "FECHA RETICULACION",
+                "nombre_agrupacion": "CONTROL DEL PROCESO",
+                "tipo_campo_detalle": [
+                    {
+                        "texto": "N/A"
+                    }
+                ]
+            },
+            {
+                "itp": "001_SPB_Z12129_AIMS04-04-002_FLASH_AKZO",
+                "dato": "",
+                "color": "#91F9B2",
+                "index": 67,
+                "contenido": [],
+                "agrupacion": 4,
+                "tipo_campo": "integer",
+                "obligatorio": "true",
+                "nombre_cabecera": "SELLO OPERARIO",
+                "nombre_agrupacion": "CONTROL DEL PROCESO",
+                "tipo_campo_detalle": [
+                    "INPUT"
+                ]
+            }
+        ],
+        "agrupacion": 4,
+        "obligatorio": "true",
+        "nombre_cabecera": "RETICULACION s/ IE7518",
+        "nombre_agrupacion": "CONTROL DEL PROCESO",
+        "tipo_campo_detalle": []
+    }
+]
