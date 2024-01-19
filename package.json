@@ -8,7 +8,7 @@
     "prod": "webpack-dev-server --mode production --env.production --history-api-fallback",
     "int": "webpack --mode development --env.development --history-api-fallback",
     "build": "webpack --mode production --env.production --history-api-fallback",
-    "build2": "vue-cli-service build",
+    "build-github-page": "webpack --mode production --env.production",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
