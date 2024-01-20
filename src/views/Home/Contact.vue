@@ -4,8 +4,9 @@
       <v-row justify="center">
         <v-col cols="12" md="4">
           <v-card elevation="0">
-            <v-card-title class="text-h4 font-weight-regular mb-4 secondary--text">Nuestros
-              Contactos</v-card-title>
+            <v-card-title class="text-h4 font-weight-regular mb-4 secondary--text" style="white-space: nowrap;">
+              Nuestros Contactos
+            </v-card-title>
             <v-card-text class="text-h6 mb-4">
               <v-row>
                 <v-col cols="12" sm="6">
@@ -32,7 +33,8 @@
         </v-col>
         <v-col cols="12" md="4">
           <v-card elevation="0">
-            <v-card-title class="text-h4 font-weight-regular mb-4 secondary--text text-no-wrap">Formulario de
+            <v-card-title class="text-h4 font-weight-regular mb-4 secondary--text">Formulario
+              de
               contacto</v-card-title>
             <v-card-text class="text-h6 mb-4">
               <v-row>
@@ -57,8 +59,7 @@
                 </v-col>
               </v-row>
             </v-card-text>
-            <v-card-actions>
-              <v-spacer></v-spacer>
+            <v-card-actions class="justify-center">
               <v-btn color="primary" class="ma-2" @click="contact" :disabled="!validateForm">
                 Contacta con nosotros
               </v-btn>
@@ -68,7 +69,7 @@
         <v-col cols="12" md="4">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2988.5848763364697!2d2.1634641150931606!3d41.49159867925469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bddd461e9a53%3A0x83c0015da6e1106c!2sHIELO%20EXPRESS!5e0!3m2!1ses!2ses!4v1676628842949!5m2!1ses!2ses"
-            width="450" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+            style="border:0; width:100%; height:400px;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </v-col>
       </v-row>

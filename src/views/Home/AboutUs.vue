@@ -38,9 +38,9 @@ export default {
                    La producción, envasado y paletizado estan totalmente automatizados y se realiza a temperaturas constantes de -5º/-8ºC, 
                    ofreciendo un producto de alta calidad con certificación IFA.`,
             images: [
-                '../../../public/img/home.png',
-                '../../../public/img/door.jpg',
-                '../../../public/img/invierno.jpg'
+                require('../../../public/img/home.png'),
+                require('../../../public/img/door.jpg'),
+                require('../../../public/img/invierno.jpg')
             ],
         };
 

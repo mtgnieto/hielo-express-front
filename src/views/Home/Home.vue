@@ -30,8 +30,10 @@
     <v-row ref="div2" class="ma-2">
       <v-col cols="12"><products-layout :mini="mini" /></v-col>
     </v-row>
-    <v-row ref="div3" class="ma-2">
-      <contact :mini="mini" />
+    <v-row ref="div3" class="ma-2" :mini="mini">
+      <v-col cols="12">
+        <contact :mini="mini" />
+      </v-col>
     </v-row>
   </v-main>
 </template>
