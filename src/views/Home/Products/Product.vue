@@ -11,7 +11,7 @@
             <v-card-text>
                 <v-row>
                     <v-col cols="6" md="6">
-                        <v-img :src="require('../../../../public/img/fondo-hielo.jpg')" height="100%" max-width="100%"
+                        <v-img :src="require(`../../../../public/img/${product.mainPhoto}`)" height="100%" max-width="100%"
                             alt="home"></v-img>
                     </v-col>
 

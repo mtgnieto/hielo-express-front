@@ -26,7 +26,7 @@ export default {
             products: [{
                 title: "Hielo 43",
                 subTitle: "transparentes cilindricos de gran durabilidad",
-                mainPhoto: "",
+                mainPhoto: "fondo-hielo.jpg",
                 idealFor: [1, 2, 3],
                 idealForDescription: "Ideal para copas Ideal para copasIdIdeal para copasIdeal para copasIdeal para copasIdeal para copaseal para copas",
                 description: { type: "glaco", bag: "2 Kg", sac: "10 kg", dimension: ["70g", "48 mm", "43 mm"], icon: 1 }
@@ -34,7 +34,7 @@ export default {
             {
                 title: "Hielo 43",
                 subTitle: "transparentes cilindricos de gran durabilidad",
-                mainPhoto: "",
+                mainPhoto: "fondo-hielo.jpg",
                 idealFor: [1, 2, 3],
                 idealForDescription: "Ideal para copas Ideal para copasIdIdeal para copasIdeal para copasIdeal para copasIdeal para copaseal para copas",
                 description: { type: "glaco", bag: "2 Kg", sac: "10 kg", dimension: ["70g", "48 mm", "43 mm"], icon: 1 }
@@ -42,16 +42,12 @@ export default {
             {
                 title: "Hielo 43",
                 subTitle: "transparentes cilindricos de gran durabilidad",
-                mainPhoto: "",
+                mainPhoto: "fondo-hielo.jpg",
                 idealFor: [1, 2, 3],
                 idealForDescription: "Ideal para copas Ideal para copasIdIdeal para copasIdeal para copasIdeal para copasIdeal para copaseal para copas",
                 description: { type: "glaco", bag: "2 Kg", sac: "10 kg", dimension: ["70g", "48 mm", "43 mm"], icon: 1 }
             }]
         };
     },
-    methods: {
-
-    },
-
 }
 </script>

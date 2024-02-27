@@ -11,7 +11,7 @@ const vuetify = new Vuetify({
         primary: '#003b5c',//rgb(0, 59, 92),
         secondary: "#5b6770",
         header: '#CEE3F6',
-        background: 'white',
+        background: '#FFFFFF',
         footer: '#424242',
         error: '#b71c1c',
       },

@@ -1,6 +1,7 @@
 <template>
   <v-app>
-    <v-app-bar elevation="1" :color="color" dark app :hide-on-scroll="!mini" v-if="$route.name != 'paySuccess'">
+    <!-- Menu normal -->
+    <v-app-bar elevation="1" :color="color" dark app :hide-on-scroll="!mini">
       <router-link to="/">
         <v-img max-height="450" max-width="250" :src="logo" alt="nqi-logo" class="ml-n16 mx-auto" />
       </router-link>
@@ -14,11 +15,11 @@
       <v-spacer></v-spacer>
       <v-app-bar-nav-icon @click="navigationDrawer" v-if="!mini"></v-app-bar-nav-icon>
     </v-app-bar>
-    <v-navigation-drawer v-if="!mini && $route.name != 'paySuccess'" color="primary" v-model="drawer" :mini-variant="mini"
-      mini-variant-width="70" :expand-on-hover="expandOnHover" :temporary="temporary" dark right app
-      mobile-breakpoint="0">
+    <!-- Menu hamburguesa -->
+    <v-navigation-drawer v-if="!mini" color="primary" v-model="drawer" :mini-variant="mini" mini-variant-width="70"
+      :expand-on-hover="expandOnHover" :temporary="temporary" dark right app mobile-breakpoint="0">
       <router-link to="/">
-        <v-img max-height="450" max-width="250" :src="require('../../../public/img/logo-white.png')" alt="nqi-logo" />
+        <v-img max-height="450" max-width="250" :src="logo" alt="nqi-logo" />
       </router-link>
       <span class="font-weight-black white--text text-h6 ml-2 mr-2" v-if="!mini">{{ nameApp }}</span>
       <v-divider></v-divider>
@@ -36,27 +37,21 @@
     <router-view ref="home"></router-view>
 
     <div v-if="loading" :style="loader" />
-    <modal-info ref="modalInfo" v-if="showEmail" :data="{ title: 'fff', text: 'ddd' }" :showForm="showEmail"></modal-info>
-    <Footer />
-    <login v-if="showLoginForm" ref="Login" :showForm="showLoginForm" @close="showLoginForm = false"></login>
+
+    <footerComponent />
   </v-app>
 </template>
 <script>
-import ModalInfo from "./ModalInfo.vue";
-import Footer from "./Footer.vue";
-import Login from "../Auth/Login.vue";
-import { logout } from "@/services/AuthServices";
+import footerComponent from "./FooterComponent.vue";
 import { mapState } from "vuex";
-import { EventBus } from "@/event-bus";
 import config from '../../config';
 
 export default {
-  components: { Footer, Login, ModalInfo, config },
+  components: { footerComponent, config },
   data() {
     return {
       nameApp: config.other.nameApp,
       color: "primary",
-      showLoginForm: false,
       drawer: false,
       group: null,
       expandOnHover: false,
@@ -85,21 +80,7 @@ export default {
       ],
     };
   },
-  created() {
-    EventBus.$on("login", (data) => {
-      this.showLoginForm = data;
-    });
-    if (this.$route.name == "homeApp") {
-      this.color = "primary";
-      this.logo = require("../../../public/img/logo-purple.png");
-      this.classTextIcon = "font-weight-black primary--text text-h6 ml-n16 mx-auto";
-    }
-  },
   methods: {
-    async handleLogout() {
-      await logout();
-      this.$router.push({ path: "home" });
-    },
     goTo(refName) {
       var element = this.$refs.home.$refs[refName];
       var top = element.offsetTop;
@@ -118,7 +99,6 @@ export default {
   },
   computed: {
     ...mapState("loader", ["loading"]),
-    ...mapState("showEmail", ["showEmail"]),
     navBarHideOnScroll() {
       return this.$vuetify.breakpoint.name == "xs" ||
         this.$vuetify.breakpoint.name == "sm"

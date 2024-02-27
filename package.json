@@ -12,9 +12,6 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@aws-amplify/ui-vue": "^2.3.8",
-    "@vue-stripe/vue-stripe": "^4.4.2",
-    "aws-amplify": "^4.3.19",
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
     "google-maps-api-loader": "^1.1.1",

@@ -28,7 +28,7 @@ module.exports = env => {
       new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({
         template: './src/index.html',
-        title: 'nqi'
+        title: 'hielo express'
       })
     ],
     optimization: {

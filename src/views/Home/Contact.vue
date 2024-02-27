@@ -108,7 +108,6 @@ export default {
     async contact() {
       this.$store.dispatch("loader/show");
       this.dataForm.toMail = "consultanqi@gmail.com";
-      // await nqiServices.sendMail(this.dataForm);
       this.$store.dispatch("loader/hide");
       this.$emit("close");
       this.$store.dispatch("showEmail/show");
