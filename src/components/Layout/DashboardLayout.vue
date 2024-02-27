@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <!-- Menu normal -->
-    <v-app-bar elevation="1" :color="color" dark app :hide-on-scroll="!mini">
+    <v-app-bar elevation="1" :color="color" dark app :hide-on-scroll="!mini" height="80px">
       <router-link to="/">
         <v-img max-height="450" max-width="250" :src="logo" alt="nqi-logo" class="ml-n16 mx-auto" />
       </router-link>
