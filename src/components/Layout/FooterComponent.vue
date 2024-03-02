@@ -12,7 +12,7 @@
           </v-card-text>
 
           <v-card-text class="white--text pt-0">
-            Más de 20 años innovando y seguimos avanzando.
+            Si tú me dices GEL, lo hielo todo
           </v-card-text>
 
           <v-divider></v-divider>

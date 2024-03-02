@@ -24,25 +24,25 @@ export default {
     data() {
         return {
             products: [{
-                title: "Hielo 43",
+                title: "Bugy 40",
                 subTitle: "transparentes cilindricos de gran durabilidad",
-                mainPhoto: "fondo-hielo.jpg",
+                mainPhoto: "bugy40.png",
                 idealFor: [1, 2, 3],
                 idealForDescription: "Ideal para copas Ideal para copasIdIdeal para copasIdeal para copasIdeal para copasIdeal para copaseal para copas",
                 description: { type: "glaco", bag: "2 Kg", sac: "10 kg", dimension: ["70g", "48 mm", "43 mm"], icon: 1 }
             },
             {
-                title: "Hielo 43",
+                title: "Bugy 43",
                 subTitle: "transparentes cilindricos de gran durabilidad",
-                mainPhoto: "fondo-hielo.jpg",
+                mainPhoto: "bugy43.png",
                 idealFor: [1, 2, 3],
                 idealForDescription: "Ideal para copas Ideal para copasIdIdeal para copasIdeal para copasIdeal para copasIdeal para copaseal para copas",
                 description: { type: "glaco", bag: "2 Kg", sac: "10 kg", dimension: ["70g", "48 mm", "43 mm"], icon: 1 }
             },
             {
-                title: "Hielo 43",
+                title: "Cocktail CK2",
                 subTitle: "transparentes cilindricos de gran durabilidad",
-                mainPhoto: "fondo-hielo.jpg",
+                mainPhoto: "bugycocktail.png",
                 idealFor: [1, 2, 3],
                 idealForDescription: "Ideal para copas Ideal para copasIdIdeal para copasIdeal para copasIdeal para copasIdeal para copaseal para copas",
                 description: { type: "glaco", bag: "2 Kg", sac: "10 kg", dimension: ["70g", "48 mm", "43 mm"], icon: 1 }

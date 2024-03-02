@@ -3,7 +3,7 @@
     <!-- Menu normal -->
     <v-app-bar elevation="1" :color="color" dark app :hide-on-scroll="!mini" height="80px">
       <router-link to="/">
-        <v-img max-height="450" max-width="250" :src="logo" alt="nqi-logo" class="ml-n16 mx-auto" />
+        <v-img max-height="200" max-width="250" :src="logo" alt="logo" class="ml-n16 mx-auto" />
       </router-link>
       <span :class="classTextIcon">{{ nameApp }}</span>
       <v-spacer />
@@ -19,7 +19,7 @@
     <v-navigation-drawer v-if="!mini" color="primary" v-model="drawer" :mini-variant="mini" mini-variant-width="70"
       :expand-on-hover="expandOnHover" :temporary="temporary" dark right app mobile-breakpoint="0">
       <router-link to="/">
-        <v-img max-height="450" max-width="250" :src="logo" alt="nqi-logo" />
+        <v-img max-height="250" max-width="250" :src="logo" alt="logo" />
       </router-link>
       <span class="font-weight-black white--text text-h6 ml-2 mr-2" v-if="!mini">{{ nameApp }}</span>
       <v-divider></v-divider>

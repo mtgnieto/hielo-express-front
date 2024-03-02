@@ -89,7 +89,7 @@ export default {
   data() {
     return {
       ourContacts: [
-        { id: 0, title: "Nuestra ubicación", icon: "mdi-map-marker", description: "Hielo Express, Carrer de Milà, 12 Pol. Ind. Cadesbank, 08291 Ripollet, Barcelona" },
+        { id: 0, title: "Nuestra ubicación", icon: "mdi-map-marker", description: "Hielo Express, er de Milà, 12 Pol. Ind. Cadesbank, 08291 Ripollet, Barcelona" },
         { id: 1, title: "Teléfono", icon: "mdi-cellphone", description: "932 419 999" },
         { id: 2, title: "Email", icon: "mdi-email", description: "comercial@hieloexpress.com" }
       ],
