@@ -3,9 +3,11 @@
     <!-- Menu normal -->
     <v-app-bar elevation="1" :color="color" dark app :hide-on-scroll="!mini" height="80px">
       <router-link to="/">
-        <v-img max-height="200" max-width="250" :src="logo" alt="logo" class="ml-n16 mx-auto" />
+        <div class="header-container">
+          <img :src="logo" alt="Logo" class="logo-image">
+          <div class="header-text">Hielo Express</div>
+        </div>
       </router-link>
-      <span :class="classTextIcon">{{ nameApp }}</span>
       <v-spacer />
       <v-list class="list" color="primary" v-if="mini && $route.name == 'home'">
         <v-list-item v-for="(item, i) in items" :key="i" @click="goTo(item.link)">
@@ -19,7 +21,7 @@
     <v-navigation-drawer v-if="!mini" color="primary" v-model="drawer" :mini-variant="mini" mini-variant-width="70"
       :expand-on-hover="expandOnHover" :temporary="temporary" dark right app mobile-breakpoint="0">
       <router-link to="/">
-        <v-img max-height="250" max-width="250" :src="logo" alt="logo" />
+        <v-img width="50%" :src="logo" alt="nqi-logo" />
       </router-link>
       <span class="font-weight-black white--text text-h6 ml-2 mr-2" v-if="!mini">{{ nameApp }}</span>
       <v-divider></v-divider>
@@ -41,6 +43,7 @@
     <footerComponent />
   </v-app>
 </template>
+
 <script>
 import footerComponent from "./FooterComponent.vue";
 import { mapState } from "vuex";
@@ -141,10 +144,40 @@ export default {
   },
 };
 </script>
+
 <style scoped>
 .list {
   list-style: none;
   display: flex;
   gap: 25px;
+}
+
+.header-container {
+  display: flex;
+  /* Activa Flexbox para alinear elementos horizontalmente */
+  align-items: center;
+  /* Alinea los elementos verticalmente en el centro */
+  justify-content: start;
+  /* Alinea los elementos al inicio (izquierda) */
+  /* Puedes añadir más estilos aquí para ajustar el contenedor como margenes o padding */
+}
+
+.logo-image {
+  /* Establece un tamaño adecuado para tu logo */
+  width: 100px;
+  /* Ajusta según sea necesario */
+  height: auto;
+  /* Mantiene la proporción del logo */
+  margin-right: 20px;
+  /* Añade espacio entre el logo y el texto */
+}
+
+.header-text {
+  /* Estilos para el texto */
+  color: white;
+  /* O cualquier color que se ajuste a tu diseño */
+  font-size: 24px;
+  /* Ajusta según sea necesario */
+  /* Añade más estilos de texto como fuente, peso, etc. */
 }
 </style>
