@@ -16,6 +16,7 @@
       </v-list>
       <v-spacer></v-spacer>
       <v-app-bar-nav-icon @click="navigationDrawer" v-if="!mini"></v-app-bar-nav-icon>
+      <languageComponent />
     </v-app-bar>
     <!-- Menu hamburguesa -->
     <v-navigation-drawer v-if="!mini" color="primary" v-model="drawer" :mini-variant="mini" mini-variant-width="70"
@@ -46,11 +47,12 @@
 
 <script>
 import footerComponent from "./FooterComponent.vue";
+import languageComponent from "./LanguageComponent.vue";
 import { mapState } from "vuex";
 import config from '../../config';
 
 export default {
-  components: { footerComponent, config },
+  components: { footerComponent, config, languageComponent },
   data() {
     return {
       nameApp: config.other.nameApp,
@@ -63,24 +65,6 @@ export default {
       classText: "white--text text-h8",
       classTextIcon: "font-weight-black white--text text-h6 ml-n16 mx-auto",
       logo: require("../../../public/img/logo-white.png"),
-      items: [
-        {
-          title: "Inicio",
-          link: "div0",
-        },
-        {
-          title: "Nosotros",
-          link: "div1",
-        },
-        {
-          title: "Productos",
-          link: "div2",
-        },
-        {
-          title: "Contactemos",
-          link: "div3",
-        },
-      ],
     };
   },
   methods: {
@@ -101,6 +85,26 @@ export default {
     },
   },
   computed: {
+    items() {
+      return [
+        {
+          title: this.$t('home.menu.init'),
+          link: "div0",
+        },
+        {
+          title: "Nosotros",
+          link: "div1",
+        },
+        {
+          title: "Productos",
+          link: "div2",
+        },
+        {
+          title: "Contactemos",
+          link: "div3",
+        },
+      ]
+    },
     ...mapState("loader", ["loading"]),
     navBarHideOnScroll() {
       return this.$vuetify.breakpoint.name == "xs" ||

@@ -19,8 +19,8 @@
                     <v-col cols="10">
                       <h5 class="text-h6 font-weight-regular secondary--text"> {{ ourContact.title }}</h5>
                       <p class="text-body-1 font-weight-regular mb-4 secondary--text d-inline-block"> {{
-                        ourContact.description
-                      }}</p>
+                    ourContact.description
+                  }}</p>
                     </v-col>
                   </v-row>
                 </v-col>
@@ -88,11 +88,6 @@ export default {
   },
   data() {
     return {
-      ourContacts: [
-        { id: 0, title: "Nuestra ubicación", icon: "mdi-map-marker", description: "Hielo Express, er de Milà, 12 Pol. Ind. Cadesbank, 08291 Ripollet, Barcelona" },
-        { id: 1, title: "Teléfono", icon: "mdi-cellphone", description: "932 419 999" },
-        { id: 2, title: "Email", icon: "mdi-email", description: "comercial@hieloexpress.com" }
-      ],
       dataForm: {
         mail: "",
         name: "",
@@ -114,6 +109,13 @@ export default {
     },
   },
   computed: {
+    ourContacts() {
+      return [
+        { id: 0, title: this.$t('ourContacts.location'), icon: "mdi-map-marker", description: "Hielo Express, er de Milà, 12 Pol. Ind. Cadesbank, 08291 Ripollet, Barcelona" },
+        { id: 1, title: "Teléfono", icon: "mdi-cellphone", description: "932 419 999" },
+        { id: 2, title: "Email", icon: "mdi-email", description: "comercial@hieloexpress.com" }
+      ]
+    },
     validateForm: function () {
       return (
         !!this.dataForm.mail &&

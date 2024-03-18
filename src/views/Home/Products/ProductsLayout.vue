@@ -21,14 +21,14 @@ export default {
     components: {
         Product
     },
-    data() {
-        return {
-            products: [{
+    computed: {
+        products() {
+            return [{
                 title: "Bugy 40",
-                subTitle: "transparentes cilindricos de gran durabilidad",
+                subTitle: this.$t('products.bugy_40.subTitle'),
                 mainPhoto: "bugy40.png",
                 idealFor: [1, 2, 3],
-                idealForDescription: "Ideal para copas Ideal para copasIdIdeal para copasIdeal para copasIdeal para copasIdeal para copaseal para copas",
+                idealForDescription: this.$t('products.bugy_40.idealForDescription'),
                 description: { type: "glaco", bag: "2 Kg", sac: "10 kg", dimension: ["70g", "48 mm", "43 mm"], icon: 1 }
             },
             {
@@ -47,7 +47,7 @@ export default {
                 idealForDescription: "Ideal para copas Ideal para copasIdIdeal para copasIdeal para copasIdeal para copasIdeal para copaseal para copas",
                 description: { type: "glaco", bag: "2 Kg", sac: "10 kg", dimension: ["70g", "48 mm", "43 mm"], icon: 1 }
             }]
-        };
-    },
+        }
+    }
 }
 </script>

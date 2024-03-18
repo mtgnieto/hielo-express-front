@@ -8,12 +8,13 @@
           <v-card class="pa-5" width="400" height="400"
             style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" color="primary"
             text-center>
-            <v-card-title class="headline white--text justify-center">Ice Selling</v-card-title>
+            <v-card-title class="headline white--text justify-center">{{ $t('home.selectProducts.title')
+              }}</v-card-title>
             <v-card-text class="white--text text-center">
               Elija su tipo y cantidad de hielo a continuación y haga su pedido con nosotros.
             </v-card-text>
             <v-form>
-              <v-select :items="['Product 1', 'Product 2', 'Product 3']" label="Seleccionar producto" solo
+              <v-select :items="['Product 1', 'Product 2', 'Product 3']" :label="$t('home.selectProducts.label')" solo
                 append-icon="mdi-chevron-down"></v-select>
               <v-text-field label="Cantidad" type="number" solo></v-text-field>
               <v-card-actions class="justify-center">
@@ -52,18 +53,6 @@ export default {
     return {
       textPresentation: `hola buenas`,
       tagHtml: "",
-      dataForm: {
-        mail: "",
-        name: "",
-        surnames: "",
-        phone: "",
-        comments: "",
-        toMail: "",
-        plan: "No contratado",
-        subject: "Contacto",
-        selectedProduct: '',
-        quantity: 1,
-      },
     };
   },
   computed: {
