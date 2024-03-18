@@ -12,7 +12,7 @@
           </v-card-text>
 
           <v-card-text class="white--text pt-0">
-            Si tú me dices GEL, lo hielo todo
+            {{ $t('footer.text')}}
           </v-card-text>
 
           <v-divider></v-divider>

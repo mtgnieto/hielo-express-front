@@ -56,7 +56,7 @@
                             <v-col cols="6">
                                 <v-row>
                                     <h2 class=" font-weight-black primary--text ">
-                                        Bolsa
+                                        {{ $t('products.bag')}}
                                     </h2>
                                 </v-row>
                                 <v-row>
@@ -74,7 +74,7 @@
                             <v-col cols="6">
                                 <v-row>
                                     <h2 class=" font-weight-black primary--text ">
-                                        Saco
+                                        {{ $t('products.bigBag')}}
                                     </h2>
                                 </v-row>
                                 <v-row>

@@ -11,14 +11,15 @@
             <v-card-title class="headline white--text justify-center">{{ $t('home.selectProducts.title')
               }}</v-card-title>
             <v-card-text class="white--text text-center">
-              Elija su tipo y cantidad de hielo a continuación y haga su pedido con nosotros.
+              {{ $t('home.selectProducts.subtitle')}}
             </v-card-text>
             <v-form>
               <v-select :items="['Product 1', 'Product 2', 'Product 3']" :label="$t('home.selectProducts.label')" solo
                 append-icon="mdi-chevron-down"></v-select>
-              <v-text-field label="Cantidad" type="number" solo></v-text-field>
+              <v-text-field :label="$t('home.selectProducts.quantity')" type="number" solo></v-text-field>
               <v-card-actions class="justify-center">
-                <v-btn color="secondary" dark large>Contacto</v-btn>
+                <v-btn color="secondary" dark large>{{ $t('home.selectProducts.button')
+              }}</v-btn>
               </v-card-actions>
             </v-form>
           </v-card>

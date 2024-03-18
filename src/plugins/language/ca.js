@@ -2,24 +2,47 @@ const file = {
     ca: {
         home: {
             selectProducts: {
-                title: 'Ice Selling',
-                label: 'Seleccionar producto'
+                title: 'Venda de gel',
+                label: 'Seleccionar producte',
+                subtitle: 'Trieu el vostre tipus i quantitat de gel a continuació i feu la vostra comanda amb nosaltres.',
+                quantity: 'Quantitat',
+                button: 'Contacte'
             },
             menu: {
                 init: "Inici",
-                us: "Nosotros",
-                products: "productos",
-                contact: "contactemos"
+                us: "Nosaltres",
+                products: "Productes",
+                contact: "Contacte"
             },
         },
         products: {
+            bag: 'Bossa',
+            bigBag: 'Sac',
             bugy_40: {
+                subTitle: "Transparents cilíndrics de gran durabilitat",
+                idealForDescription: "Ideal per a copes Ideal per a copesIdIdeal per a copesIdeal per a copesIdeal per a copesIdeal per a copasseal per a copes"
+            },
+            bugy_43: {
+                subTitle: "Transparents cilíndrics de gran durabilitat",
+                idealForDescription: "Ideal per a copes Ideal per a copesIdIdeal per a copesIdeal per a copesIdeal per a copesIdeal per a copasseal per a copes"
+            },
+            cocktail_ck2: {
                 subTitle: "Transparents cilíndrics de gran durabilitat",
                 idealForDescription: "Ideal per a copes Ideal per a copesIdIdeal per a copesIdeal per a copesIdeal per a copesIdeal per a copasseal per a copes"
             }
         },
         ourContacts: {
-            location: "La nostra ubicació"
+            title: "Informació de contacte",
+            location: "La nostra ubicació",
+            phone: "Telèfon"
+        },
+        contactForm: {
+            title: "Formulari de contacte",
+            name: "Nom",
+            surname: "Cognoms",
+            phone: "Telèfon",
+            text: "Dubtes o consultes", 
+            button: "Contacta amb nosaltres"
         },
         us: `La nostra empresa, constituïda com a Catalona de Gel S.L neix el 1918, convertint-se en l'empresa pionera productora
                     de gel en galledes a nivell industrial. Comptem amb presència al mercat peninsular amb la marca Bugy Bugy, des de
@@ -32,6 +55,9 @@ const file = {
                     qualitat sanitària i conservant-ne l'aspecte cristal·lí.
                     La producció, envasat i paletitzat estan totalment automatitzats, realitzant-se a temperatures constants de -5º/-8ºC,
                     oferint així un producte d´alta qualitat amb certificació IFA.`,
+        footer: {
+            text: "Si tu em dius GEL, ho glaço tot"
+                },
         spanish: 'Spanish',
         english: 'English'
     }

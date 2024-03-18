@@ -5,7 +5,7 @@
         <v-col cols="12" md="4">
           <v-card elevation="0">
             <v-card-title class="text-h4 font-weight-regular mb-4 secondary--text" style="white-space: nowrap;">
-              Nuestros Contactos
+              {{ $t('ourContacts.title')}}
             </v-card-title>
             <v-card-text class="text-h6 mb-4">
               <v-row>
@@ -33,17 +33,15 @@
         </v-col>
         <v-col cols="12" md="4">
           <v-card elevation="0">
-            <v-card-title class="text-h4 font-weight-regular mb-4 secondary--text">Formulario
-              de
-              contacto</v-card-title>
+            <v-card-title class="text-h4 font-weight-regular mb-4 secondary--text">{{ $t('contactForm.title')}}</v-card-title>
             <v-card-text class="text-h6 mb-4">
               <v-row>
                 <v-col cols="6">
-                  <v-text-field v-model="dataForm.name" label="Nombre"
+                  <v-text-field v-model="dataForm.name" :label="$t('contactForm.name')"
                     :rules="[(v) => !!v || 'Nombre requerido']"></v-text-field>
                 </v-col>
                 <v-col cols="6">
-                  <v-text-field v-model="dataForm.surnames" label="Apellidos"
+                  <v-text-field v-model="dataForm.surnames" :label="$t('contactForm.surname')"
                     :rules="[(v) => !!v || 'Apellidos requerido']"></v-text-field>
                 </v-col>
                 <v-col cols="6">
@@ -51,17 +49,17 @@
                     :rules="[(v) => !!v || 'Email requerido']"></v-text-field>
                 </v-col>
                 <v-col cols="6">
-                  <v-text-field v-model="dataForm.phone" label="Teléfono"></v-text-field>
+                  <v-text-field v-model="dataForm.phone" :label="$t('contactForm.phone')"></v-text-field>
                 </v-col>
                 <v-col cols="12">
-                  <v-textarea v-model="dataForm.comments" name="input-7-4" label="Dudas o consultas"
+                  <v-textarea v-model="dataForm.comments" name="input-7-4" :label="$t('contactForm.text')"
                     :rules="[(v) => !!v || 'Dudas o consultas requerido']"></v-textarea>
                 </v-col>
               </v-row>
             </v-card-text>
             <v-card-actions class="justify-center">
               <v-btn color="primary" class="ma-2" @click="contact" :disabled="!validateForm">
-                Contacta con nosotros
+                {{ $t('contactForm.button')}}
               </v-btn>
             </v-card-actions>
           </v-card>
@@ -112,7 +110,7 @@ export default {
     ourContacts() {
       return [
         { id: 0, title: this.$t('ourContacts.location'), icon: "mdi-map-marker", description: "Hielo Express, er de Milà, 12 Pol. Ind. Cadesbank, 08291 Ripollet, Barcelona" },
-        { id: 1, title: "Teléfono", icon: "mdi-cellphone", description: "932 419 999" },
+        { id: 1, title: this.$t('ourContacts.phone'), icon: "mdi-cellphone", description: "932 419 999" },
         { id: 2, title: "Email", icon: "mdi-email", description: "comercial@hieloexpress.com" }
       ]
     },

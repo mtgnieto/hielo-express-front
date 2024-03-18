@@ -15,8 +15,8 @@
         </v-list-item>
       </v-list>
       <v-spacer></v-spacer>
+      <languageComponent/>
       <v-app-bar-nav-icon @click="navigationDrawer" v-if="!mini"></v-app-bar-nav-icon>
-      <languageComponent />
     </v-app-bar>
     <!-- Menu hamburguesa -->
     <v-navigation-drawer v-if="!mini" color="primary" v-model="drawer" :mini-variant="mini" mini-variant-width="70"
@@ -92,15 +92,15 @@ export default {
           link: "div0",
         },
         {
-          title: "Nosotros",
+          title: this.$t('home.menu.us'),
           link: "div1",
         },
         {
-          title: "Productos",
+          title: this.$t('home.menu.products'),
           link: "div2",
         },
         {
-          title: "Contactemos",
+          title: this.$t('home.menu.contact'),
           link: "div3",
         },
       ]

@@ -3,23 +3,46 @@ const file = {
         home: {
             selectProducts: {
                 title: 'Venta de hielo',
-                label: 'Seleccionar producto'
+                label: 'Seleccionar producto',
+                subtitle: 'Elija su tipo y cantidad de hielo a continuación y haga su pedido con nosotros.',
+                quantity: 'Cantidad',
+                button: 'Contacto'
             },
             menu: {
                 init: "Inicio",
                 us: "Nosotros",
-                products: "productos",
-                contact: "contactemos"
+                products: "Productos",
+                contact: "Contacto"
             },
         },
         products: {
+            bag: 'Bolsa',
+            bigBag: 'Saco',
             bugy_40: {
+                subTitle: "Transparentes cilindricos de gran durabilidad",
+                idealForDescription: "Ideal para copas Ideal para copasIdIdeal para copasIdeal para copasIdeal para copasIdeal para copaseal para copas"
+            },
+            bugy_43: {
+                subTitle: "Transparentes cilindricos de gran durabilidad",
+                idealForDescription: "Ideal para copas Ideal para copasIdIdeal para copasIdeal para copasIdeal para copasIdeal para copaseal para copas"
+            },
+            cocktail_ck2: {
                 subTitle: "Transparentes cilindricos de gran durabilidad",
                 idealForDescription: "Ideal para copas Ideal para copasIdIdeal para copasIdeal para copasIdeal para copasIdeal para copaseal para copas"
             }
         },
         ourContacts: {
-            location: "Nuestra ubicación"
+            title: "Información de contacto",
+            location: "Nuestra ubicación",
+            phone: "Teléfono"
+        },
+        contactForm: {
+            title: "Formulario de contacto",
+            name: "Nombre",
+            surname: "Apellidos",
+            phone: "Teléfono",
+            text: "Dudas o consultas", 
+            button: "Contacta con nosotros"
         },
         us: `Nuestra empresa, constituida como Catalona de Gel S.L nace en 1918, convirtiéndose en la empresa pionera productora 
              de hielo en cubos a nivel industrial.Contamos con presencia en el mercado peninsular con la marca Bugy Bugy, desde 
@@ -32,6 +55,9 @@ const file = {
              calidad sanitaria y conservando su aspecto cristalino.
              La producción, envasado y paletizado están totalmente automatizados, realizándose a temperaturas constantes de - 5º/ -8ºC,
              ofreciendo así un producto de alta calidad con certificación IFA.`,
+        footer: {
+            text: "Si tú me dices GEL, lo hielo todo"
+        },
         spanish: 'Español',
         english: 'Inglés'
     }

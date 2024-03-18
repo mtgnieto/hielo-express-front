@@ -1,7 +1,7 @@
 <template>
     <div>
         <v-card class="pa-md-6" elevation="0">
-            <v-card-title class="text-h4 font-weight-regular mb-2 primary--text">Nosotros</v-card-title>
+            <v-card-title class="text-h4 font-weight-regular mb-2 primary--text"> {{ $t('home.menu.us')}}</v-card-title>
             <v-row>
                 <v-col cols="12" md="12">
                     <v-card-text class="text-h6 mb-4 text-justify secondary--text">
